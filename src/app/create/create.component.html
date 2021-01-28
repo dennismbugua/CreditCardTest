@@ -1,0 +1,11 @@
+<div class="left">
+
+    <input type="text" placeholder="Card Holder Name" name="name" required #cardHolder>
+    <input type="text" placeholder="Credit Card Number" name="number" required #creditCardNumber>
+    <input type="date" placeholder="Expiration Date" name="expDate" required #expirationDate>
+    <input type="number" placeholder="Amount" name="amount" required #amount>
+
+    <button (click)="addCard(cardHolder.value, creditCardNumber.value, expirationDate.value, amount.value)">Submit Card</button>
+      
+</div>
+

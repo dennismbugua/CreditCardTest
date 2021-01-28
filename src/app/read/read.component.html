@@ -1,0 +1,13 @@
+<div class="right" *ngIf="cards">
+
+  <h3>Credit Card Display Details</h3>
+  <ul>
+    <li *ngFor="let card of cards | async">
+      <p>{{card.cardHolder}}</p>
+      <p>{{card.creditCardNumber}}</p>
+      <p>{{card.expirationDate}}</p>
+      <p>{{card.amount}}</p>
+    </li>
+  </ul>
+
+</div>
